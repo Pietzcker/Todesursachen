@@ -3,7 +3,7 @@ Dieses Skript liest die Daten der amtlichen Todesursachenstatistik (23211-0004, 
 
 Es werden sowohl die absoluten Todesfallzahlen als auch die Anzahl Todesfälle pro 100.000 in der jeweiligen Geschlechts- und Alterskategorie ausgegeben.
 
-Bei der Auswahl der Daten aus 12411-0008 ist darauf zu achten, dass alle Jahre eingeschlossen sind, die in der Abfrage 23211-0004 verwendet werden. In den Datensätzen für 1993 und 1994 sind Lücken auf Destatis, daher ist es sinnvoll, Daten erst ab 1995 abzurufen.
+Bei der Auswahl der Daten aus 12411-0008 ist darauf zu achten, dass alle Jahre eingeschlossen sind, die in der Abfrage 23211-0004 verwendet werden. 
 
 Was die zu berücksichtigenden Diagnosen angeht, können beliebige Auswahlen bei 23211-0004 getroffen werden. Es sollte aber beachtet werden, dass die Gruppen teils Untermengen von einander darstellen und so bei Vollauswahl zahlreiche Todesfälle mehrmals gezählt werden. Um sicherzustellen, dass jeder Todesfall nur einmal gewertet wird, eignet sich die Auswahl der Gruppen
 

@@ -71,7 +71,7 @@ with open("12411-0008.csv", encoding="cp1252") as infile:
             raise ValueError                                                # Das sollte nicht passieren...
 
         for index, anzahl in enumerate(eintrag[2:]):                        # Jetzt die Zahlenwerte der aktuellen Zeile durchgehen
-            if anzahl == "-":
+            if anzahl in "-.":
                 anzahl = 0
             else:
                 anzahl = int(anzahl)
@@ -90,7 +90,7 @@ with open(f"Todesursachen Einzelwerte {min(jahre)}-{max(jahre)}.csv", "w", newli
             continue
         for index, data in enumerate(eintrag[2:]):
             if altersgruppen[index] not in ("Insgesamt", "Alter unbekannt"): # nur Spalten mit definierter Altersgruppe übernehmen
-                if data == "-":
+                if data in "-.":
                     data = 0
                 else:
                     data = int(data)
